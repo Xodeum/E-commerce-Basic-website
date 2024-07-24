@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 6rem 2rem 2rem 2rem;
+}
+
+.products, .product-detail, .cart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product, .cart-item {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product h3, .cart-item h3 {
+    margin: 0 0 1rem 0;
+}
+
+.product p, .cart-item p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#checkout-button {
+    display: block;
+    margin: 2rem auto 0 auto;
+    padding: 1rem 2rem;
+}
