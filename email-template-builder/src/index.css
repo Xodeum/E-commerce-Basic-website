@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 font-sans;
+  }
+}
+
+@layer components {
+  .email-element {
+    @apply border-2 border-dashed border-gray-300 p-4 m-2 rounded-lg cursor-move transition-all duration-200;
+  }
+  
+  .email-element:hover {
+    @apply border-blue-400 bg-blue-50;
+  }
+  
+  .email-element.dragging {
+    @apply opacity-50;
+  }
+  
+  .drop-zone {
+    @apply min-h-[100px] border-2 border-dashed border-gray-300 rounded-lg p-4 transition-colors;
+  }
+  
+  .drop-zone.drag-over {
+    @apply border-blue-500 bg-blue-50;
+  }
+  
+  .sidebar-panel {
+    @apply bg-white border-r border-gray-200 p-4 min-h-screen;
+  }
+  
+  .preview-panel {
+    @apply bg-white border border-gray-200 rounded-lg p-6 shadow-sm;
+  }
+  
+  .element-property {
+    @apply mb-4 p-3 border border-gray-200 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors font-medium;
+  }
+}
